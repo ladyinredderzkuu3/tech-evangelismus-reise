@@ -1,7 +1,7 @@
 {
   "name": "tech-evangelismus-reise",
   "version": "1.0.0",
-  "description": "Ein interaktives Tool zur Erkundung von Technologien in Deutschland.",
+  "description": "Ein interaktives Tool zur Erkundung und Bewertung von Technologien in Deutschland.",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
