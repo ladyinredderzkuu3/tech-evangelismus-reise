@@ -7,6 +7,11 @@ const PORT = process.env.PORT || 3000;
 // Middleware for static files
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Health check route
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'UP' });
+});
+
 // Route for the main page
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
